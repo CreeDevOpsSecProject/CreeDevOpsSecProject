@@ -19,4 +19,4 @@ echo $SERVER > server.crt
 echo "third ls"
 ls
 
-pm2 start ./bin/www --name proj_app
+pm2 start ./bin/www.js --name proj_app
