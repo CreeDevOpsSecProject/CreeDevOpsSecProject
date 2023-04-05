@@ -7,7 +7,7 @@ pm2 stop proj_app
 
 cd CreeDevOpsSecProject/
 
-npm install
+npm install -f
 echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
 
