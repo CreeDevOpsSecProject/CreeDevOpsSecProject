@@ -45,4 +45,5 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf CreeDevOpsSecProject/;git clone https://github.com/CreeDevOpsSecProject/CreeDevOpsSecProject.git; source CreeDevOpsSecProject/deploy.sh"
+          command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "export SERVER=\"$SERVER\";
+           export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf CreeDevOpsSecProject/;git clone https://github.com/CreeDevOpsSecProject/CreeDevOpsSecProject.git; source CreeDevOpsSecProject/deploy.sh"
